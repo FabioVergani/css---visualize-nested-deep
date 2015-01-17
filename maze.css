@@ -1,0 +1,41 @@
+.tree{font:normal normal 500 0/0 mono;display:inline-block;}
+
+.tree:empty{display:none;}
+
+.tree,
+.tree ul,
+.tree li{
+text-indent:0;text-align:left;
+margin:0;padding:0;border:0;outline:0;
+box-sizing:border-box;
+}
+
+.tree ul,
+.tree li{
+list-style:none;position:relative;display:block;
+font:normal normal 500 14px/14px sans-serif;
+text-rendering:optimizeSpeed;
+}
+
+
+.tree ul{padding:2px;}
+.tree ul > li{min-width:4px;}
+.tree ul > li:last-child{min-height:4px;}
+.tree ul > li:not(:last-child){border-bottom:none;min-height:3px;}
+
+.tree > ul:first-child{padding:0;z-index:1;zoom:1;}/*root*/
+
+
+
+.tree ul:hover{background:#E3FF8B !important;}
+
+.tree > ul:first-child,
+.tree ul:hover >li >ul{background:#000 ;}
+
+.tree ul >li:hover{background:red !important;}
+
+
+
+
+
+.skin .tree li{border:1px solid #ADA008;}
